@@ -1,8 +1,8 @@
 <html>
 <body>
 
-Welcome <?php echo $_POST["nombre"]; ?><br>
-Your email address is: <?php echo $_POST["email"]; ?>
+Ongi etorri <?php echo $_POST["nombre"]; ?><br>
+Zure e-mail helbidea da: <?php echo $_POST["email"]; ?>
 
 </body>
 </html> 
