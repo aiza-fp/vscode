@@ -1,26 +1,39 @@
 <?php
-$zenbaki1 = 5;
-$zenbaki2 = 9;
-$zenbaki3 = 2;
+$z1 = 9;
+$z2 = 6;
+$z3 = 6;
 
-if($zenbaki1 >= $zenbaki2 && $zenbaki2 >= $zenbaki3){
-    echo "<br>" . "Ordenatuta beherantz:" . $zenbaki1 .  " " . $zenbaki2 .  " " . $zenbaki3 .  " ";
-    echo "<br>" . "Ordenatuta gorantz:" . $zenbaki3 .  " " . $zenbaki2 .  " " . $zenbaki1 .  " ";
-}elseif($zenbaki1 >= $zenbaki2 && $zenbaki2 < $zenbaki3){
-    echo "<br>" . "Ordenatuta beherantz: " . $zenbaki1 .  " " . $zenbaki3 .  " " . $zenbaki2 .  " ";
-    echo "<br>" . "Ordenatuta gorantz: " . $zenbaki2 .  " " . $zenbaki3 .  " " . $zenbaki1 .  " ";
-}elseif($zenbaki2 >= $zenbaki3 && $zenbaki3 >= $zenbaki1){
-    echo "<br>" . "Ordenatuta beherantz: " . $zenbaki1 .  " " . $zenbaki3 .  " " . $zenbaki2 .  " ";
-    echo "<br>" . "Ordenatuta gorantz: " . $zenbaki2 .  " " . $zenbaki3 .  " " . $zenbaki1 .  " ";
-}elseif($zenbaki2 >= $zenbaki3 && $zenbaki3 < $zenbaki1){
-    echo "<br>" . "Ordenatuta beherantz: " . $zenbaki2 .  " " . $zenbaki1 .  " " . $zenbaki3 .  " ";
-    echo "<br>" . "Ordenatuta gorantz: " . $zenbaki3 .  " " . $zenbaki1 .  " " . $zenbaki2 .  " ";
-}elseif($zenbaki3 >= $zenbaki1 && $zenbaki1 >= $zenbaki2){
-    echo "<br>" . "Ordenatuta beherantz: " . $zenbaki3 .  " " . $zenbaki1 .  " " . $zenbaki2 .  " ";
-    echo "<br>" . "Ordenatuta gorantz: " . $zenbaki2 .  " " . $zenbaki1 .  " " . $zenbaki3 .  " ";
-}elseif($zenbaki3 >= $zenbaki1 && $zenbaki1 < $zenbaki2){
-    echo "<br>" . "Ordenatuta beherantz: " . $zenbaki3 .  " " . $zenbaki2 .  " " . $zenbaki1 .  " ";
-    echo "<br>" . "Ordenatuta gorantz: " . $zenbaki1 .  " " . $zenbaki2 .  " " . $zenbaki3 .  " ";
+if($z1 >= $z2 && $z2 >= $z3){
+    echo "<br>" . "1-Ordenatuta beherantz:" . $z1 .  " " . $z2 .  " " . $z3 .  " ";
+    echo "<br>" . "1-Ordenatuta gorantz:" . $z3 .  " " . $z2 .  " " . $z1 .  " ";
+}elseif($z1 >= $z2 && $z2 < $z3 && $z1 >= $z3){
+    echo "<br>" . "2-Ordenatuta beherantz: " . $z1 .  " " . $z3 .  " " . $z2 .  " ";
+    echo "<br>" . "2-Ordenatuta gorantz: " . $z2 .  " " . $z3 .  " " . $z1 .  " ";
+}elseif($z1 >= $z2 && $z2S < $z3 && $z1 < $z3){
+    echo "<br>" . "3-Ordenatuta beherantz: " . $z3 .  " " . $z1 .  " " . $z2 .  " ";
+    echo "<br>" . "3-Ordenatuta gorantz: " . $z2 .  " " . $z1 .  " " . $z3 .  " ";
+}
+
+elseif($z2 >= $z3 && $z3 >= $z1){
+    echo "<br>" . "4-Ordenatuta beherantz:" . $z2 .  " " . $z3 .  " " . $z1 .  " ";
+    echo "<br>" . "4-Ordenatuta gorantz:" . $z1 .  " " . $z3 .  " " . $z2 .  " ";
+}elseif($z2 >= $z3 && $z3 < $z1 && $z2 >= $z1){
+    echo "<br>" . "5-Ordenatuta beherantz: " . $z2 .  " " . $z1 .  " " . $z3 .  " ";
+    echo "<br>" . "5-Ordenatuta gorantz: " . $z3 .  " " . $z1 .  " " . $z2 .  " ";
+}elseif($z2 >= $z3 && $z3 < $z1 && $z2 < $z1){
+    echo "<br>" . "6-Ordenatuta beherantz: " . $z1 .  " " . $z2 .  " " . $z3 .  " ";
+    echo "<br>" . "6-Ordenatuta gorantz: " . $z3 .  " " . $z2 .  " " . $z1 .  " ";
+}
+
+elseif($z2 >= $z3 && $z3 >= $z1){
+    echo "<br>" . "7-Ordenatuta beherantz:" . $z2 .  " " . $z3 .  " " . $z1 .  " ";
+    echo "<br>" . "7-Ordenatuta gorantz:" . $z1 .  " " . $z3 .  " " . $z2 .  " ";
+}elseif($z2 >= $z3 && $z3 < $z1 && $z2 >= $z1){
+    echo "<br>" . "8-Ordenatuta beherantz: " . $z2 .  " " . $z1 .  " " . $z3 .  " ";
+    echo "<br>" . "8-Ordenatuta gorantz: " . $z3 .  " " . $z1 .  " " . $z2 .  " ";
+}elseif($z2 >= $z3 && $z3 < $z1 && $z2 < $z1){
+    echo "<br>" . "9-Ordenatuta beherantz: " . $z1 .  " " . $z2 .  " " . $z3 .  " ";
+    echo "<br>" . "9-Ordenatuta gorantz: " . $z3 .  " " . $z2 .  " " . $z1 .  " ";
 }
 
 ?>
