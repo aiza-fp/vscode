@@ -48,7 +48,7 @@
         </table>
         
         <?php
-            // Guardamos los nuevos precios rebajados en el array anterior
+            // Prezioak eguneratu
             for ($i=0; $i<5; $i++) {
                 $prezioak[$i] = $prezioak[$i] * (100-$beherapena)/100;
             }

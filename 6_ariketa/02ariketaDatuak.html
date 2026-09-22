@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Ariketa 602</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Datu Pertsonalak</h1>
+            <br>
+            <form class="form-inline" action="02ariketaDatuak.php" method="post" >
+                <p>Sartu ondorengo datuak: </p>
+                <div class="form-group">
+                    <label for="izena">Izena:</label>
+                    <input type="text" id="izena" name="izena" class="form-control" placeholder="Sartu izena" required>
+                </div>
+                <div class="form-group">
+                    <label for="abizenak">Abizenak:</label>
+                    <input type="text" id="abizenak" name="abizenak" class="form-control" placeholder="Sartu abizenak">
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="adina">Adina:</label>
+                    <select name="adina" id="adina" class="form-control" placeholder="Adina tartea zehaztu">
+                        <option value="0-10">0-10</option>
+                        <option value="11-20">11-20</option>
+                        <option value="21-30">21-30</option>
+                        <option value="31-40">31-40</option>
+                        <option value="41-50">41-50</option>
+                        <option value="51-60">51-60</option>
+                        <option value="61-70">61-70</option>
+                        <option value="71-80">71-80</option>
+                        <option value="81-la muerte">81-la muerte</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pisua">Pisua:</label>
+                    <input type="text" id="pisua" name="pisua" class="form-control" placeholder="Pisua"> kg
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="sexua">Sexua:</label>
+                    <input type="radio" id="sexua_h" name="sexua" value="GIZONA">
+                    <label for="sexua_h">GIZONA</label>
+                    <input type="radio" id="sexua_m" name="sexua" value="EMAKUMEA">
+                    <label for="sexua_m">EMAKUMEA</label>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="egoerazibila" class="form-check-label">Egoera zibila:</label>
+                    <div class="form-check">
+                        
+                        <input type="radio" id="egoerazibila_soltero" name="egoerazibila" value="EZKONGABEA" class="form-check-input">
+                        <label for="egoerazibila_soltero" class="form-check-label">EZKONGABEA</label>
+                    </div>
+                    <div class="form-check">
+                        
+                        <input type="radio" id="egoerazibila_casado" name="egoerazibila" value="EZKONDUA" class="form-check-input">
+                        <label for="egoerazibila_casado" class="form-check-label">EZKONDUA</label>
+                    </div>
+                    <div class="form-check">
+                        
+                        <input type="radio" id="egoerazibila_otro" name="egoerazibila" value="BESTE BAT" class="form-check-input">
+                        <label for="egoerazibila_otro" class="form-check-label">BESTE BAT</label>
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <div>
+                        <label for="zaletasunak">Zaletasunak:</label>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="checkbox" id="zinea" name="zaletasunak[]" value="zinea" class="checkbox">
+                        <label for="cine"> Zinea</label>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="checkbox" id="literatura" name="zaletasunak[]" value="literatura" class="checkbox">
+                        <label for="literatura"> Literatura</label>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="checkbox" id="komikiak" name="zaletasunak[]" value="komikiak" class="checkbox">
+                        <label for="tebeos"> Komikiak</label>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="checkbox" id="kirola" name="zaletasunak[]" value="kirola" class="checkbox">
+                        <label for="deporte"> Kirola</label>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="checkbox" id="musika" name="zaletasunak[]" value="musika" class="checkbox">
+                        <label for="musica"> Musika</label>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="checkbox" id="telebista" name="zaletasunak[]" value="telebista" class="checkbox">
+                        <label for="telebista"> Telebista</label>
+                    </div>
+                </div>
+                <br>
+                
+                <div class="form-group">
+                    <input type="submit" value="Bidali">
+                    <input type="reset" value="Garbitu">
+                </div>
+
+            </form>
+        </div>
+    </body>
+</html>

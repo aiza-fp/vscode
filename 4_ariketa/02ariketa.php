@@ -6,8 +6,8 @@
     */
 
 
-    $produktuak = array('Gizonezkoen zapatak', 'Emakumezkoen zapatak', 'Korrikarako zapatilak', 'Sandaliak', 'Galtzerdiak');
-    $prezioak = array(60, 75, 45, 25, 12);
+    $produktuak = array('Gizonezkoen zapatak', 'Emakumezkoen zapatak', 'Korrikarako zapatilak', 'Sandaliak', 'Galtzerdiak', 'txapelak');
+    $prezioak = array(60, 75, 45, 25, 12, 20);
 
 ?>
 
@@ -29,7 +29,7 @@
             </thead>
             <tbody>
                 <?php
-                    for ($i=0; $i<5; $i++) {
+                    for ($i=0; $i<count($produktuak); $i++) {
                         echo '<tr>';
                         echo '<td>', $produktuak[$i], '</td>';
                         echo '<td>', $prezioak[$i], '</td>';

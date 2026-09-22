@@ -3,7 +3,7 @@
     10 zenbaki gorde array batean eta handiena erakutsi.
     */
 
-    $zenbakiArraya = array(12,54,86,33,5,65);
+    $zenbakiArraya = array(12,54,86,33,5,65,63,98,27,44);
     $max = 0;
 
     // Maximoa kalkulatu

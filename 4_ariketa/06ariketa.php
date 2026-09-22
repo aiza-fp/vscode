@@ -5,14 +5,17 @@
 
     $zenbakiArraya = array();
     $elementuak = 10;
+    $batura = 0;
     
 
     // Array-a bete eta minimoa gorde
     for ($i = 0; $i < $elementuak; $i++) {
         $zenbakiArraya[$i] = rand(1,99);
+        $batura += $zenbakiArraya[$i];
     }
 
-    $batezbestekoa = array_sum($zenbakiArraya) / count($zenbakiArraya);
+    //$batezbestekoa = array_sum($zenbakiArraya) / count($zenbakiArraya);
+    $batezbestekoa = $batura / count($zenbakiArraya);
     
 ?>
 
