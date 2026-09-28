@@ -35,7 +35,7 @@
                 echo '<div style="color:red">Ez du adierazi bere <b>adin tartea</b></div><br>';
             }
 
-            if(isset($_POST['pisua'])) {
+            if(!empty($_POST['pisua'])) {
                 $pisua = $_POST['pisua'];
                 echo 'Bere pisua da <b>', $pisua, '</b><br>';
             } else {
