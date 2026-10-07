@@ -1,10 +1,7 @@
-<html >
-<head>
-    <title>Produktuak</title>
-</head>
-<body>
-    <form method="get" action="../app/controllers/ProductuakController.php">
-        <button type="submit">Produktuak ikusi</button>
-    </form>
-</body>
-</html>
+<?php
+require __DIR__ . '/../app/models/Produktua.php';
+require __DIR__ . '/../app/controllers/ProductuakController.php';
+require __DIR__ . '/../app/Router.php';
+
+Router::bideratu();
+?>
