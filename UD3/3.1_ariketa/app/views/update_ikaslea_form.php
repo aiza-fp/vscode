@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="../app/Router.php">
+    <form action="index.php">
         <input type="hidden" name="id" value="<?=$ikaslea['id']?>">
         <input type="text" name="izena" placeholder="Izena" value="<?=$ikaslea['izena']?>">
         <input type="text" name="email" placeholder="Email"  value="<?=$ikaslea['email']?>">

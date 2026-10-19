@@ -43,10 +43,8 @@ class Router {
     }
 }
 
-// Router.php zuzenean eskatzen bada (adib. "Aldatu"/"Ezabatu" estekak), bideratu
-// hemendik bertatik. "public/index.php"-tik "require" bidez kargatzen bada,
-// hark deituko dio berak "Router::bideratu()"-ri, beraz ez da hemen bikoiztuko.
-//if (basename($_SERVER['SCRIPT_FILENAME']) === basename(__FILE__)) {
-    Router::bideratu();
-//}
+// Estekak eta formularioak orain "public/index.php"-ra bideratzen dira
+// (adib. "index.php?action=update_form&id=..."), eta hark "require" bidez
+// kargatzen du fitxategi hau, beraz hemen deitzea nahikoa da.
+Router::bideratu();
 ?>
