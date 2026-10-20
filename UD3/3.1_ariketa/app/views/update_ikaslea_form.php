@@ -13,7 +13,7 @@
         <input type="hidden" name="id" value="<?=$ikaslea['id']?>">
         <input type="text" name="izena" placeholder="Izena" value="<?=$ikaslea['izena']?>">
         <input type="text" name="email" placeholder="Email"  value="<?=$ikaslea['email']?>">
-        <input type="hidden" name="action" value="eguneratuIkaslea">
+        <input type="hidden" name="action" value="eguneratu_ikaslea">
         <input type="submit" value="Eguneratu">
     </form>
 </body>

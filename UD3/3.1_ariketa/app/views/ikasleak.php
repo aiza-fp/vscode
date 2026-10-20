@@ -11,12 +11,12 @@
       <td><?= $ikaslea['izena'] ?></td>
       <td><?= $ikaslea['email'] ?></td>
       <td><a href="">Irakasgaiak</a></td>
-      <td><a href="index.php?action=update_form&id=<?= $ikaslea['id'] ?>">Aldatu</a></td>
-      <td><a href="index.php?action=ezabatu&id=<?= $ikaslea['id'] ?>">Ezabatu</a></td>
+      <td><a href="index.php?action=update_form_ikaslea&id=<?= $ikaslea['id'] ?>">Aldatu</a></td>
+      <td><a href="index.php?action=ezabatu_ikaslea&id=<?= $ikaslea['id'] ?>">Ezabatu</a></td>
     </tr>
   <?php endforeach; ?>
   </table>
   <br>
-  <a href="index.php?action=create_form">Ikaslea gehitu</a>
+  <a href="index.php?action=create_form_ikaslea">Ikaslea gehitu</a>
 </body>
 </html>
