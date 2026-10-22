@@ -38,6 +38,7 @@ class Ikaslea {
         return $ikaslea;        
     }
     public static function ezabatu(int $id): void {
+        Irakasgaia::ezabatu_ikasle_baten_irakasgaiak($id);
         $mysqli = new mysqli("localhost", "root", "", "3-1ariketa");
         if ($mysqli->connect_errno) {
             throw new Exception("Akatsa MySQL konexioan: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error);
