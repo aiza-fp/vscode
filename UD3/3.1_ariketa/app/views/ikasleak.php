@@ -18,5 +18,7 @@
   </table>
   <br>
   <a href="index.php?action=create_form_ikaslea">Ikaslea gehitu</a>
+  <br>
+  <a href="index.php?action=ikasleak_irakasgaiekin">Ikasleak irakasgaiekin ikusi</a>
 </body>
 </html>

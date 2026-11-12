@@ -1,5 +1,19 @@
 <?php
 class IkasleakController {
+    public function ikasleakIrakasgaiekinBistaratu(): void {
+        try {
+            $ikasleak = Ikaslea::guztiak();
+            $irakasgaiakIkasleko = [];
+            foreach($ikasleak as $ikaslea){
+                $irakasgaiakIkasleko[$ikaslea['id']] = Irakasgaia::guztiak($ikaslea['id']);
+            }
+        } catch (Exception $e) {
+            echo "Errorea gertatu da: " . $e->getMessage();
+            $ikasleak = [];
+            $irakasgaiakIkasleko = [];
+        }
+        require __DIR__ . '/../views/ikasleak_irakasgaiak.php';
+    }
     public function bistaratu(): void {
         try {
             $ikasleak = Ikaslea::guztiak();

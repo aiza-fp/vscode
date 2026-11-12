@@ -6,6 +6,11 @@ require_once __DIR__ . '/controllers/IrakasgaiakController.php';
 
 class Router {
     public static function bideratu(): void {
+        if (isset($_GET['action']) && $_GET['action'] === 'ikasleak_irakasgaiekin') {
+            $ikasleakController = new IkasleakController();
+            $ikasleakController->ikasleakIrakasgaiekinBistaratu();
+            exit;
+        }
         if (isset($_GET['action']) && $_GET['action'] === 'eguneratu_ikaslea'
         && isset($_GET['id']) && isset($_GET['izena']) && isset($_GET['email'])) {
             $ikasleakController = new IkasleakController();
